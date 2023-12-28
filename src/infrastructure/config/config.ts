@@ -1,9 +1,9 @@
 import * as dotenv from 'dotenv';
-import { DataBase } from "./types/types";
+import { DatabaseConfig } from "./interfaces/database-config";
 
 dotenv.config();
 
-export const DataBaseConfig:DataBase = {
+export const Config:DatabaseConfig = {
     user: process.env.DATABASE_USER || 'postgres',
     database: process.env.DATABASE_NAME || 'postgres',
     password: process.env.DATABASE_PASSWORD || 'password',
