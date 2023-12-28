@@ -7,7 +7,8 @@
     "start": "node dist/index.js",
     "dev": "npx tsc --watch",
     "tsc": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "database": "node dist/infrastructure/scripts/database.js"
   },
   "keywords": [],
   "author": "",
